@@ -1,0 +1,63 @@
+.featured-container{
+    width: 100vw;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.featured-container h3{
+    font-size: 2rem;
+}
+.featured-grid{
+    max-width: 1200px;
+    margin: 0 20px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.featured-card{
+    max-width: 275px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.featured-card img{
+    width: 100%;
+    object-fit: cover;
+}
+.shoe-title {
+    font-size: 1rem;
+    text-transform: capitalize;
+    display: flex;
+    flex-wrap: wrap;
+}
+.featured-price{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.featured-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+
+@media (max-width: 750px) {
+    .featured-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .featured-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}@media (max-width: 430px) {
+    .featured-grid{
+        grid-template-columns: 1fr;
+    }
+}
