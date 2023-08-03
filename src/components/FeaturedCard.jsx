@@ -1,14 +1,18 @@
-import "./Featured.css"
+import "./Collection.css"
+import { Link } from "react-router-dom"
 
-const FeaturedCard = ({name, brand, price, img}) => {
+const FeaturedCard = ({name, brand, price, img, id}) => {
   return (
-    <div className="featured-card">
+    <Link 
+      onClick={() => {window.scrollTo(0,0)}}
+      to={`/categories/product/${id}`}
+      className="collection-card">
         <img src={img}/>
-        <div className="featured-bottom">
+        <div className="collection-bottom">
             <p className="shoe-title">{brand} {name}</p>
-            <p className="featured-price">${price}</p>
+            <p className="collection-price">${price}</p>
         </div>
-    </div>
+    </Link>
   )
 }
 

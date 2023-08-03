@@ -9,7 +9,7 @@
     flex-direction: row-reverse;
 }
 .banner-container img{
-    height: 400px;
+    height: 100%;
     width: 50%;
     object-fit: cover;
 }
@@ -32,6 +32,8 @@
     background: black;
     color: white;
     padding: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 @media (max-width: 890px) {
     .banner-right{
