@@ -80,7 +80,7 @@ import Plr4 from "/src/images/products/otherImages/Plr4.avif"
 export const shoes = [
     {
         id: 1,
-        category: [],
+        category: ["nike"],
         featured: true,
         img: Img1,
         name: "dunk low retro",
@@ -93,7 +93,7 @@ export const shoes = [
     },
     {
         id: 2,
-        category: [],
+        category: ["nike"],
         featured: false,
         img: Img2,
         name: "dunk high retro",
@@ -106,7 +106,7 @@ export const shoes = [
     },
     {
         id: 3,
-        category: [],
+        category: ["nike"],
         featured: true,
         img: Img3,
         name: "air jordan 3 retro",
@@ -119,7 +119,7 @@ export const shoes = [
     },
     {
         id: 4,
-        category: [],
+        category: ["nike"],
         featured: false,
         img: Img4,
         name: "air vapormax plus",
@@ -132,7 +132,7 @@ export const shoes = [
     },
     {
         id: 5,
-        category: [],
+        category: ["nike"],
         featured: false,
         img: Img5,
         name: "free metcon 5",
@@ -145,7 +145,7 @@ export const shoes = [
     },
     {
         id: 6,
-        category: [],
+        category: ["nike"],
         featured: true,
         img: Img6,
         name: "air jordan 1 mid se",
@@ -184,7 +184,7 @@ export const shoes = [
     },
     {
         id: 9,
-        category: ["cleats"],
+        category: ["sports"],
         featured: false,
         img: Img9,
         name: "FUTURE PRO FG/AG",
@@ -213,7 +213,7 @@ export const shoes = [
         category: ["running"],
         featured: false,
         img: Img11,
-        name: "Ultraboost Light Running Shoes",
+        name: "Ultraboost Light",
         brand: "adidas",
         price: 190,
         otherImgs: [Ultraboost1, Ultraboost2],
@@ -226,7 +226,7 @@ export const shoes = [
         category: ["running"],
         featured: true,
         img: Img12,
-        name: "Adizero Boston 12 Running Shoes",
+        name: "Adizero Boston 12",
         brand: "adidas",
         price: 160,
         otherImgs: [Adizero1, Adizero2, Adizero3, Adizero4],
@@ -275,7 +275,7 @@ export const shoes = [
     },
     {
         id: 16,
-        category: ["boots"],
+        category: ["hunting"],
         featured: true,
         img: Img16,
         name: "HOVR™ Dawn",
@@ -288,7 +288,7 @@ export const shoes = [
     },
     {
         id: 17,
-        category: ["fishing"],
+        category: ["fishing", "boating"],
         featured: false,
         img: Img17,
         name: "UA Micro G®",
@@ -314,14 +314,14 @@ export const shoes = [
     },
     {
         id: 19,
-        category: ["running"],
+        category: ["running", "nike"],
         featured: false,
         img: Img19,
         name: "Air Max 270",
         brand: "nike",
         price: 160,
         otherImgs: [Max1, Max2, Max3, Max4],
-        colors: ["black", "blue", "yellow"],
+        colors: ["white", "blue", "yellow"],
         sizes: [],
         description: `Legendary Air gets lifted. Nike's first lifestyle Air Max brings you style, comfort and a big Air bubble. With its large window and fresh array of colors, it lets you showcase one of Nike's greatest innovations. The lightweight and airy upper and super low-cut collar make it the perfect go-to for warm-weather fun.`,
     },

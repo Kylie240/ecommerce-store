@@ -1,18 +1,18 @@
-import "./Collection.css"
+import "./Grid.css"
 import {shoes} from "../ShoeData"
-import FeaturedCard from "./FeaturedCard"
+import GridCard from "./GridCard"
 
-const Collection = () => {
-    const newArray = shoes.filter(shoe => shoe.brand === "nike")
+const Grid = () => {
+    const newArray = shoes.filter(shoe => shoe.featured)
 
   return (
-    <div className='collection container'>
-        <div className="collection-container">
-            <h3>Nike Collection</h3>
-            <div className="collection-grid">
+    <div className='grid container'>
+        <div className="grid-container">
+            <h3>Trending Styles</h3>
+            <div className="grid-grid">
                 {newArray.map((shoe) => (
                     <div key={shoe.id}>
-                        <FeaturedCard 
+                        <GridCard 
                             id={shoe.id}
                             img={shoe.img}
                             brand={shoe.brand}
@@ -27,4 +27,4 @@ const Collection = () => {
   )
 }
 
-export default Collection
+export default Grid
