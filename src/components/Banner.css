@@ -3,18 +3,26 @@
     max-width: 1200px;
     height: 400px;
     display: flex;
+    justify-content: space-between;
     margin: 0 20px;
+}
+.banner-right a{
+    text-decoration: none;
 }
 .reverse{
     flex-direction: row-reverse;
 }
-.banner-container img{
-    height: 100%;
+.banner-image{
     width: 50%;
+}
+.banner-image img{
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 .banner-right{
     display: flex;
+    width: 50%;
     flex-direction: column;
     justify-content: center;
     align-items: start;
@@ -22,18 +30,21 @@
 }
 .banner-title{
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 36px;
 }
 .banner-info{
+    font-size: 16px;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 .banner-button{
     background: black;
     color: white;
     padding: 10px;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 18px;
     text-transform: uppercase;
+    margin-top: 10px;
 }
 @media (max-width: 890px) {
     .banner-right{

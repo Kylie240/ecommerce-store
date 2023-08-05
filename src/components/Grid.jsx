@@ -6,7 +6,7 @@ const Grid = () => {
     const newArray = shoes.filter(shoe => shoe.featured)
 
   return (
-    <div className='grid container'>
+    <div id="trending" className='grid container'>
         <div className="grid-container">
             <h3>Trending Styles</h3>
             <div className="grid-grid">

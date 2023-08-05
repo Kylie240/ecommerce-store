@@ -1,10 +1,12 @@
 import {Route, BrowserRouter as Router, Routes} from "react-router-dom"
+import { useEffect, useState } from "react"
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import ProductPage, { CartContext } from './pages/ProductPage'
 import Footer from "./components/Footer"
 import Shop from "./pages/Shop"
-import { useEffect, useState } from "react"
+import All from "./components/Categories/All"
+import Fashion from "./components/Categories/Fashion"
 
 function App() {
   const [cartItems, setCartItems] = useState([])
@@ -33,7 +35,10 @@ function App() {
         <Routes>
           <Route index path="/" element={<Home />} />
 
-          <Route path='all' element={<Shop />} />
+          <Route path='shop' element={<Shop />} >
+            <Route path='all' element={<All />}/>
+            <Route path='fashion' element={<Fashion />}/>
+          </Route>
 
           <Route path='categories/product/:id' element={<ProductPage />} />
         </Routes>

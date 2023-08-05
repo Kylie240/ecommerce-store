@@ -1,14 +1,17 @@
+import { Link } from "react-router-dom"
 import "./Banner.css"
 
 const Banner = ({title, info, button, img}) => {
   return (
     <div className="banner container">
         <div className="banner-container">
-            <img src={img} />
+            <div className="banner-image">
+              <img src={img} />
+            </div>
             <div className="banner-right">
                 <div className="banner-title">{title}</div>
                 <div className="banner-info">{info}</div>
-                <div className="banner-button">{button}</div>
+                <Link to={"/all"} className="banner-button">{button}</Link>
             </div>
         </div>
     </div>
