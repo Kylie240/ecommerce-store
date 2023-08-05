@@ -6,7 +6,10 @@ import ProductPage, { CartContext } from './pages/ProductPage'
 import Footer from "./components/Footer"
 import Shop from "./pages/Shop"
 import All from "./components/Categories/All"
-import Fashion from "./components/Categories/Fashion"
+import Brand from "./components/Categories/Brand" 
+import Color from "./components/Categories/Color" 
+import Category from "./components/Categories/Category" 
+import Price from "./components/Categories/Price" 
 
 function App() {
   const [cartItems, setCartItems] = useState([])
@@ -37,10 +40,13 @@ function App() {
 
           <Route path='shop' element={<Shop />} >
             <Route path='all' element={<All />}/>
-            <Route path='fashion' element={<Fashion />}/>
+            <Route path='category/:param' element={<Category />}/>
+            <Route path='brand/:param' element={<Brand />}/>
+            <Route path='color/:param' element={<Color />}/>
+            <Route path='price/:low/:high' element={<Price />}/>
           </Route>
 
-          <Route path='categories/product/:id' element={<ProductPage />} />
+          <Route path='product/:id' element={<ProductPage />} />
         </Routes>
         <Footer />
       </CartContext.Provider>

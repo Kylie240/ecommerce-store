@@ -1,132 +1,64 @@
 import "./Shop.css"
 import { shoes } from "../ShoeData"
+import { Link } from 'react-router-dom';
 
 const FilterMenu = ({setNewArray}) => {
 
-    const changeBrand = (e) => {
-        if (e.target.dataset.brand === "all") {
-            setNewArray(shoes)
-        } else {
-            const newArray = shoes.filter(shoe => shoe.brand === e.target.dataset.brand)
-            setNewArray(newArray);
-        }
-    }
     const changePrice = (e) => {
         const lowPrice = parseInt(e.target.dataset.low)
         const highPrice = parseInt(e.target.dataset.high)
         const priceArray = shoes.filter(shoe => shoe.price >= lowPrice && shoe.price <= highPrice)
         setNewArray(priceArray)
-    }
-    const changeColor = (e) => {
-        const color = e.target.dataset.color
-        const colorArray = shoes.filter(shoe => shoe.colors.includes(color))
-        setNewArray(colorArray)
-    }
-    const changeCategory = (e) => {
-        const cat = e.target.dataset.category
-        const catArray = shoes.filter(shoe => shoe.category.includes(cat))
-        setNewArray(catArray)
-    }
+    }    
 
   return (
     <div className='filter-menu'>
           <div className="filter-brand">
             <h5>Brand</h5>
             <ul>
-              <li data-brand="all" onClick={(e) => changeBrand(e)}>All</li>
-              <li data-brand="adidas" onClick={(e) => changeBrand(e)}>Adidas</li>
-              <li data-brand="nike" onClick={(e) => changeBrand(e)}>Nike</li>
-              <li data-brand="puma" onClick={(e) => changeBrand(e)}>Puma</li>
-              <li data-brand="under armour" onClick={(e) => changeBrand(e)}>Under Armour</li>
+              <Link to={`/shop/all`}>All</Link>
+              <Link to={`/shop/brand/adidas`}>Adidas</Link>
+              <Link to={`/shop/brand/nike`}>Nike</Link>
+              <Link to={`/shop/brand/puma`}>Puma</Link>
+              <Link to={`/shop/brand/under armour`}>Under Armour</Link>
             </ul>
           </div>
           <div className="filter-price">
             <h5>Price</h5>
             <ul>
-                <li data-low={0} 
-                    data-high={25}
-                    onClick={(e) => changePrice(e)}
-                    >$0 - $25</li>
-                <li data-low={25} 
-                    data-high={50}
-                    onClick={(e) => changePrice(e)}
-                    >$25 - $50</li>
-                <li data-low={50} 
-                    data-high={100}
-                    onClick={(e) => changePrice(e)}
-                    >$50 - $100</li>
-                <li data-low={100} 
-                    data-high={150}
-                    onClick={(e) => changePrice(e)}
-                    >$100 -$150</li>
-                <li data-low={150} 
-                    data-high={200}
-                    onClick={(e) => changePrice(e)}
-                    >$150 - $200</li>
-                <li data-low={200} 
-                    data-high={1000}
-                    onClick={(e) => changePrice(e)}
-                    >$200+</li>
-                <li data-low={0} 
-                    data-high={0}
-                    onClick={(e) => changePrice(e)}
-                    >clear</li>
+              <Link to={`/shop/price/0/25`}>$0 - $25</Link>
+              <Link to={`/shop/price/25/50`}>$25 - $50</Link>
+              <Link to={`/shop/price/50/100`}>$50 - $100</Link>
+              <Link to={`/shop/price/100/150`}>$100 - $150</Link>
+              <Link to={`/shop/price/150/200`}>$150 - $200</Link>
+              <Link to={`/shop/price/200/1000`}>$200+</Link>
               </ul>
           </div>
           <div className="filter-color">
             <h5>Color</h5>
             <ul>
-              <li data-color="red"
-                onClick={(e) => changeColor(e)}
-                className='color-red'>red</li>
-              <li data-color="orange"
-                onClick={(e) => changeColor(e)}
-                className='color-orange'>orange</li>
-              <li data-color="yellow"
-                onClick={(e) => changeColor(e)}
-                className='color-yellow'>yellow</li>
-              <li data-color="green"
-                onClick={(e) => changeColor(e)}
-                className='color-green'>green</li>
-              <li data-color="blue"
-                onClick={(e) => changeColor(e)}
-                className='color-blue'>blue</li>
-              <li data-color="purple"
-                onClick={(e) => changeColor(e)}
-                className='color-purple'>purple</li>
-              <li data-color="pink"
-                onClick={(e) => changeColor(e)}
-                className='color-pink'>pink</li>
-              <li data-color="tan"
-                onClick={(e) => changeColor(e)}
-                className='color-tan'>tan</li>
-              <li data-color="brown"
-                onClick={(e) => changeColor(e)}
-                className='color-brown'>brown</li>
-              <li data-color="grey"
-                onClick={(e) => changeColor(e)}
-                className='color-grey'>grey</li>
-              <li data-color="white"
-                onClick={(e) => changeColor(e)}
-                className='color-white'>white</li>
-              <li data-color="black"
-                onClick={(e) => changeColor(e)}
-                className='color-black'>black</li>
+              <Link to={`/shop/color/red`} className="color-red">red</Link>
+              <Link to={`/shop/color/orange`} className="color-orange">orange</Link>
+              <Link to={`/shop/color/yellow`} className="color-yellow">yellow</Link>
+              <Link to={`/shop/color/green`} className="color-green">green</Link>
+              <Link to={`/shop/color/blue`} className="color-blue">blue</Link>
+              <Link to={`/shop/color/purple`} className="color-purple">purple</Link>
+              <Link to={`/shop/color/pink`} className="color-pink">pink</Link>
+              <Link to={`/shop/color/tan`} className="color-tan">tan</Link>
+              <Link to={`/shop/color/brown`} className="color-brown">brown</Link>
+              <Link to={`/shop/color/grey`} className="color-grey">grey</Link>
+              <Link to={`/shop/color/white`} className="color-white">white</Link>
+              <Link to={`/shop/color/black`} className="color-black">black</Link>
             </ul>
           </div>
           <div className="filter-category">
-            <h5>Category</h5>
+            <h5>Type</h5>
             <ul>
-              <li data-category="boating"
-                onClick={(e) => changeCategory(e)}>Boating</li>
-              <li data-category="hunting"
-                onClick={(e) => changeCategory(e)}>Hunting</li>
-              <li data-category="fishing"
-                onClick={(e) => changeCategory(e)}>Fishing</li>
-              <li data-category="running"
-                onClick={(e) => changeCategory(e)}>Running</li>
-              <li data-category="sports"
-                onClick={(e) => changeCategory(e)}>Sports</li>
+            <Link to={`/shop/category/boating`}>Boating</Link>
+            <Link to={`/shop/category/hunting`}>Hunting</Link>
+            <Link to={`/shop/category/fishing`}>Fishing</Link>
+            <Link to={`/shop/category/running`}>Running</Link>
+            <Link to={`/shop/category/sport`}>Athletic</Link>
             </ul>
           </div>
         </div>

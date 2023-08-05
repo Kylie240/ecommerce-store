@@ -5,8 +5,9 @@ import "../../components/Shop.css"
 import { useParams } from 'react-router';
 
 const Brand = ({newArray, setNewArray}) => {
-    const {param} = useParams()
-  const filteredArray = shoes.filter(shoe => shoe.colors.includes(param))
+    const {low, high} = useParams() 
+    console.log(low, high);
+  const filteredArray = shoes.filter(shoe => shoe.price >= parseInt(low) && shoe.price <= parseInt(high))
 
   return (
     <div className='shop-grid'>

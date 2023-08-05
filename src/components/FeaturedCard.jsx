@@ -5,7 +5,7 @@ const FeaturedCard = ({name, brand, price, img, id}) => {
   return (
     <Link 
       onClick={() => {window.scrollTo(0,0)}}
-      to={`/categories/product/${id}`}
+      to={`/product/${id}`}
       className="featured-card">
         <img src={img}/>
         <div className="featured-bottom">

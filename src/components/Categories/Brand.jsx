@@ -6,7 +6,8 @@ import { useParams } from 'react-router';
 
 const Brand = ({newArray, setNewArray}) => {
     const {param} = useParams()
-  const filteredArray = shoes.filter(shoe => shoe.colors.includes(param))
+    console.log(param);
+  const filteredArray = shoes.filter(shoe => shoe.brand === param)
 
   return (
     <div className='shop-grid'>
