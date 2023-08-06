@@ -25,18 +25,16 @@ function App() {
   }
 
   useEffect(() => {
-    console.log("load 1");
-    const json = localStorage.getItem("cartItems")
+    const json = localStorage.getItem("cartList")
     const savedCart = JSON.parse(json);
     if (savedCart) {
       setCartItems(savedCart)
-      console.log("load 2");
     }
   }, [])
 
   useEffect(() => {
     const json = JSON.stringify(cartItems)
-    localStorage.setItem("cartItems", json)
+    localStorage.setItem("cartList", json)
   }, [cartItems])
 
   return (

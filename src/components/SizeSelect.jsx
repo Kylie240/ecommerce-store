@@ -3,7 +3,6 @@ import "./ProductPage.css"
 const SizeSelect = ({setSelectedSize, selectedSize}) => {
 
   function handleSelect (e) {
-    console.log(e);
     setSelectedSize(e.target.dataset.size);
   }
 

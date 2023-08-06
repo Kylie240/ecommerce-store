@@ -60,8 +60,8 @@ const Navbar = () => {
               </div>
           </div>
         </div>
-      </div>
       {openCart && <Cart handleCart={handleCart} />}
+      </div>
     </div>
   )
 }

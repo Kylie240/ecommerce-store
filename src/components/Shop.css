@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 40px;
+    margin-top: 80px;
 }
 .results{
     display: flex;
@@ -65,12 +66,9 @@
     flex-direction: column;
     margin-right: 40px;
     z-index: 20;
-    height: 100vh;
-    overflow-y: scroll;
 }
 .filter-container{
     width: 240px;
-    height: 100vh;
     position: relative;
 }
 .mobile-filter-menu{
@@ -80,7 +78,7 @@
     background: white;
     width: 100vw;
     height: 100vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     margin-right: 20px;
     padding: 40px 40px;
@@ -125,6 +123,16 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+    font-size: 14px;
+}
+.mobile-filter-menu .filter-color ul{
+    position: relative;
+    display: grid;
+    max-width: 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     margin: 25px 0;
@@ -264,6 +272,9 @@
     }
 }
 @media (max-width: 900px) {
+    .mobile-filter-menu{
+        display: flex;
+    }
     .shop-grid{
         grid-template-columns: 1fr 1fr;
     }

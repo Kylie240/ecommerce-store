@@ -15,6 +15,7 @@ const ProductPage = () => {
 
   const [selectedSize, setSelectedSize] = useState()
   const [mainImage, setMainImage] = useState(featuredShoe.img)
+  const [showAlert, setShowAlert] = useState(false)
   const time = new Date().getTime()
   
   useEffect(()=>{
@@ -30,6 +31,10 @@ const ProductPage = () => {
       return alert("Must select size first")
     } else {
       addToCart(shoe, selectedSize, time)
+      setShowAlert(true)
+      setTimeout(() => {
+        setShowAlert(false)
+      }, 2500);
     }
   }
 
@@ -69,6 +74,7 @@ const ProductPage = () => {
             <SizeSelect setSelectedSize={setSelectedSize} selectedSize={selectedSize}/>
           </div>
           <div className="purchase-btns">
+            {showAlert && <div className="alert">Item has been added to cart</div>}
             <button type="submit">Add to Cart</button>
             <button>Buy Now</button>
           </div>
