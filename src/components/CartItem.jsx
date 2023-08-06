@@ -5,16 +5,15 @@ import { CartContext } from "../pages/ProductPage"
 const CartItem = ({item}) => {
   const {removeItem} = useContext(CartContext)
   const time = new Date().getTime()
-  console.log(item);
 
   return (
     <div key={time} className="cart-item">
-        <img src={item.img} alt={`${item.brand} ${item.name}`} />
+        <img src={item[0].img} alt={`${item[0].brand} ${item[0].name}`} />
         <div>
-            <p className="cart-title">{item.brand} {item.name}</p>
+            <p className="cart-title">{item[0].brand} {item[0].name}</p>
             <p className="cart-extra">Men's Shoes</p>
-            <p className="cart-size">Size 8.5</p>
-            <p className="cart-price">${item.price}</p>
+            <p className="cart-size">{item[1]}</p>
+            <p className="cart-price">${item[0].price}</p>
         </div>
         <i class="fa-solid fa-trash fa-lg" onClick={() => removeItem(item)}></i>
     </div>

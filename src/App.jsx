@@ -14,12 +14,13 @@ import Price from "./components/Categories/Price"
 function App() {
   const [cartItems, setCartItems] = useState([])
 
-  const addToCart = (item) => {
-    setCartItems([...cartItems, item])
+  const addToCart = (item, size, id) => {
+    const newShoe = ([item, size, id])
+    setCartItems([...cartItems, newShoe])
   }
 
   const removeItem = (item) => {
-    const newCart = cartItems.filter(shoe => shoe.id !== item.id)
+    const newCart = cartItems.filter(cartItem => cartItem[2] !== item[2])
     setCartItems(newCart)
   }
 

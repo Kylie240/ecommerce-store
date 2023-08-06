@@ -11,10 +11,10 @@ footer{
 footer ul{
     list-style: none;
     text-transform: capitalize;
-    width: 200px;
+    width: 250px;
 }
 footer li{
-    padding: 4px 0;
+    padding: 4px;
     color: lightgray;
     font-weight: lighter;
 }
@@ -39,6 +39,7 @@ footer li{
 }
 .top-right{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 .top-right i{
