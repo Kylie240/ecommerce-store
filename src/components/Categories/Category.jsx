@@ -3,6 +3,7 @@ import { shoes } from '../../ShoeData';
 import ShopCard from '../ShopCard';
 import "../../components/Shop.css"
 import { useParams } from 'react-router';
+import NoResults from './NoResults';
 
 const Category = ({newArray, setNewArray}) => {
   const {param} = useParam()
@@ -10,6 +11,7 @@ const Category = ({newArray, setNewArray}) => {
 
   return (
     <div className='shop-grid'>
+    {filteredArray.length === 0 && <NoResults />}
         {filteredArray.map((shoe) => (
         <ShopCard 
         id={shoe.id}

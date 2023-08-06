@@ -10,6 +10,7 @@ const Brand = ({newArray, setNewArray}) => {
 
   return (
     <div className='shop-grid'>
+    {filteredArray.length === 0 && <NoResults />}
         {filteredArray.map((shoe) => (
         <ShopCard 
         id={shoe.id}

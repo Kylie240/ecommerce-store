@@ -23,8 +23,8 @@
 }
 
 .shop-card{
-    max-height: 515px;
-    max-width: 100%;
+    aspect-ratio: 4/5;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

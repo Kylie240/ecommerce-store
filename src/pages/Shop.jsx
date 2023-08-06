@@ -8,6 +8,7 @@ import MobileFilterMenu from '../components/MobileFilterMenu';
 const Shop = () => {
   const [newArray, setNewArray] = useState(shoes)
   const [mobileFilter, setMobileFilter] = useState(false)
+  const [showFilter, setShowFilter] = useState(true)
 
   const handleMobileFilter = () => {
     if (mobileFilter === false){
@@ -22,7 +23,13 @@ const Shop = () => {
   return (
     <div className='shop-container'>
       <div className="results-header">
-        <h3 className='results'>Results ({newArray.length})</h3>
+        <div className='results'>
+          <h3>Results ({newArray.length})</h3>
+          <div onClick={()=> (setShowFilter(!showFilter))}>
+            <p>{showFilter ? "Hide" : "Show"} Filters</p>
+            <i class="fa-solid fa-sliders"></i>
+          </div>
+        </div>
         <div className="mobile-results">
           <div>
             {newArray.length} results
@@ -35,7 +42,7 @@ const Shop = () => {
       </div>
       <div className='results-container'>
         {mobileFilter && <MobileFilterMenu close={handleMobileFilter}/>}
-        <FilterMenu setNewArray={setNewArray}/>
+        {showFilter && <FilterMenu setNewArray={setNewArray}/>}
         <Outlet newArray={newArray} setNewArray={setNewArray}/>
       </div>
     </div>

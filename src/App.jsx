@@ -19,21 +19,23 @@ function App() {
   }
 
   useEffect(() => {
-    const json = localStorage.getItem("cartItem")
+    console.log("load 1");
+    const json = localStorage.getItem("cartItems")
     const savedCart = JSON.parse(json);
     if (savedCart) {
       setCartItems(savedCart)
+      console.log("load 2");
     }
   }, [])
 
   useEffect(() => {
-    const json = JSON.stringify(cartItems);
-    localStorage.setItem("cartItem", json)
-  }, [cartItems]);
+    const json = JSON.stringify(cartItems)
+    localStorage.setItem("cartItems", json)
+  }, [cartItems])
 
   return (
-    <Router>
-      <CartContext.Provider value={{ cartItems, addToCart, setCartItems}}>
+    <CartContext.Provider value={{ cartItems, addToCart, setCartItems}}>
+      <Router>
         <Navbar />
         <Routes>
           <Route index path="/" element={<Home />} />
@@ -49,8 +51,8 @@ function App() {
           <Route path='product/:id' element={<ProductPage />} />
         </Routes>
         <Footer />
-      </CartContext.Provider>
-    </Router>
+      </Router>
+    </CartContext.Provider>
   )
 }
 
