@@ -6,7 +6,7 @@ import { useParams } from 'react-router';
 import NoResults from './NoResults';
 
 const Category = ({newArray, setNewArray}) => {
-  const {param} = useParam()
+  const {param} = useParams()
   const filteredArray = shoes.filter(shoe => shoe.category.includes(param))
 
   return (

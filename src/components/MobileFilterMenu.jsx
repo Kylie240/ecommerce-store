@@ -49,6 +49,7 @@ const MobileFilterMenu = ({close}) => {
           <div className="filter-category headline">
             <h5>Type</h5>
             <ul>
+            <Link to={`/shop/category/sports`}>Athletic</Link>
             <Link to={`/shop/category/boating`} onClick={close}>Boating</Link>
             <Link to={`/shop/category/hunting`} onClick={close}>Hunting</Link>
             <Link to={`/shop/category/fishing`} onClick={close}>Fishing</Link>

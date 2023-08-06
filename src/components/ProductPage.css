@@ -66,6 +66,13 @@
     gap: 10px;
     margin: 20px 0;
 }
+.purchase-btns button{
+    cursor: pointer;
+    font-weight: bold;
+}
+.purchase-btns button:hover{
+    background: lightgray;
+}
 .product-description{
     margin: 20px 0;
     font-size: 16px;
@@ -98,6 +105,9 @@
     color: black;
     padding: 15px 0;
     border-radius: 6px;
+}
+.size-list li:hover{
+    border: 1px solid black;
 }
 
 .product-modal{

@@ -8,7 +8,7 @@ import NoResults from './NoResults';
 const Brand = ({newArray, setNewArray}) => {
     const {low, high} = useParams()
   const filteredArray = shoes.filter(shoe => shoe.price >= parseInt(low) && shoe.price <= parseInt(high))
-console.log(filteredArray);
+
   return (
     <div className='shop-grid'>
       {filteredArray.length === 0 && <NoResults />}

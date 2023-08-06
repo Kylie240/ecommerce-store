@@ -32,7 +32,7 @@ const Hero = () => {
             </a>
           </div>
           <div className="hero-grid4 hide">
-            <Link to={"/shop/fashion"}> 
+            <Link to={"/shop/category/fashion"}> 
               <div id="hero4" className="hero-overlay"></div>
               <img src={hero4} alt="hero4" />
               <p className="hero-description">Fashion</p>

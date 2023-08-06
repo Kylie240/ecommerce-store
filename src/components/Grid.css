@@ -8,12 +8,11 @@
 }
 .grid-container h3{
     font-size: 2rem;
+    padding: 10px 0;
 }
 .grid-grid{
-    max-width: 1200px;
     width: 100%;
     display: grid;
-    justify-content: space-between;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
@@ -31,7 +30,7 @@
     text-decoration: none;
     color: black;
 }
-.shop-grid .grid-card{
+.grid-card{
     width: 100%;
     max-height: 600px;
     display: flex;
@@ -45,12 +44,11 @@
     height: 275px;
     object-fit: cover;
 }
-.shoe-title {
+.grid-title {
     font-size: 1rem;
     text-transform: capitalize;
     display: flex;
     flex-wrap: wrap;
-    height: 48px;
     margin: 8px 0;
 }
 .grid-price{

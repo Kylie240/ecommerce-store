@@ -50,12 +50,11 @@
     height: 275px;
     object-fit: cover;
 }
-.shoe-title {
+.featured-title {
     font-size: 1rem;
     text-transform: capitalize;
     display: flex;
     flex-wrap: wrap;
-    height: 36px;
     margin: 8px 0;
 }
 .featured-price{

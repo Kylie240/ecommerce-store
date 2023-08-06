@@ -18,6 +18,11 @@ function App() {
     setCartItems([...cartItems, item])
   }
 
+  const removeItem = (item) => {
+    const newCart = cartItems.filter(shoe => shoe.id !== item.id)
+    setCartItems(newCart)
+  }
+
   useEffect(() => {
     console.log("load 1");
     const json = localStorage.getItem("cartItems")
@@ -34,7 +39,7 @@ function App() {
   }, [cartItems])
 
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, setCartItems}}>
+    <CartContext.Provider value={{ cartItems, addToCart, setCartItems, removeItem}}>
       <Router>
         <Navbar />
         <Routes>

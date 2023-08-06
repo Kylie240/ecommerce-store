@@ -13,6 +13,9 @@
   overflow-x: hidden;
 }
 
+body{
+}
+
 .container{
   width: 100vw;
   display: flex;
@@ -26,4 +29,9 @@ button{
   padding: 10px;
   font-weight: 500;
   text-transform: uppercase;
+  border: none;
+}
+@media (max-width:900px) {
+  body{
+  }
 }

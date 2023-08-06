@@ -7,6 +7,8 @@ import Cart from "./Cart";
 
 const Navbar = () => {
   const [openCart, setOpenCart] = useState(false)
+  const [sticky, setSticky] = useState(false)
+
   const {cartItems} = useContext(CartContext)
 
   const handleCart = () => {
@@ -14,13 +16,23 @@ const Navbar = () => {
       document.body.style.overflow = ""
       setOpenCart(false)
     } else {
-      document.body.style.overflow = "hidden"
+      document.body.style.overflow = ""
       setOpenCart(true)
     }
   }
 
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setSticky(true)
+    } else {
+      setSticky(false)
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll)
+
   return (
-    <div className='navbar'>
+    <div className="navbar">
       <div className="nav-extra">
         <div>
           <Link to={"/"}>Find A Store</Link>
@@ -29,16 +41,16 @@ const Navbar = () => {
           <Link to={"/"}>Sign In</Link>
         </div>
       </div>
-      <div className="nav-main">
+      <div className={`nav-main ${sticky ? "sticky" : ""}`}>
         <div className="navbar-container">
           <Link to={"/"} className="logo" onClick={() => window.scroll(0,0)}>
             <i class="fa-solid fa-flag-checkered fa-xl"></i>
           </Link>
           <div className="navbar-right">
             <div className="right-links"></div>
-              <Link to={"/shop/all"}>Shop All</Link>
-              <Link to={"/shop/all"}>Brands</Link>
-              <Link to={"/shop/sale"}>Sale</Link>
+              <Link to={"/shop/all"}>Shop</Link>
+              <Link>Brands</Link>
+              <Link>Sale</Link>
               <div className="right-icons">
                 <div className="cart-icon" onClick={() => handleCart()}>
                   <i class="fa-solid fa-cart-shopping fa-lg"></i>

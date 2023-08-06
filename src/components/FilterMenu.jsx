@@ -47,11 +47,12 @@ const FilterMenu = ({setNewArray}) => {
         <div className="filter-category headline">
           <h5>Type</h5>
           <ul>
+          <Link to={`/shop/category/sports`}>Athletic</Link>
           <Link to={`/shop/category/boating`}>Boating</Link>
-          <Link to={`/shop/category/hunting`}>Hunting</Link>
+          <Link to={`/shop/category/fashion`}>Fashion</Link>
           <Link to={`/shop/category/fishing`}>Fishing</Link>
+          <Link to={`/shop/category/hunting`}>Hunting</Link>
           <Link to={`/shop/category/running`}>Running</Link>
-          <Link to={`/shop/category/sport`}>Athletic</Link>
           </ul>
         </div>
       </div>

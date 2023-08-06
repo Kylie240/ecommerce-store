@@ -9,7 +9,7 @@ const GridCard = ({name, brand, price, img, id}) => {
       className="grid-card">
         <img src={img}/>
         <div className="grid-bottom">
-            <p className="shoe-title">{brand} {name}</p>
+            <p className="grid-title">{brand} {name}</p>
             <p className="grid-price">${price}</p>
         </div>
     </Link>
