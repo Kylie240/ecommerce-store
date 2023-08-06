@@ -1,18 +1,17 @@
 import React, { useState } from 'react'
 import { shoes } from '../../ShoeData';
-import GridCard from '../GridCard';
+import ShopCard from '../ShopCard';
 import "../../components/Shop.css"
 import { useParams } from 'react-router';
 
 const Brand = ({newArray, setNewArray}) => {
     const {param} = useParams()
-    console.log(param);
   const filteredArray = shoes.filter(shoe => shoe.brand === param)
 
   return (
     <div className='shop-grid'>
         {filteredArray.map((shoe) => (
-        <GridCard 
+        <ShopCard 
         id={shoe.id}
         img={shoe.img}
         brand={shoe.brand}

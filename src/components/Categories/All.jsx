@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { shoes } from '../../ShoeData';
-import GridCard from '../../components/GridCard';
+import ShopCard from '../../components/ShopCard';
 import "../../components/Shop.css"
 
 const All = () => {
@@ -9,7 +9,7 @@ const All = () => {
   return (
     <div className='shop-grid'>
         {newArray.map((shoe) => (
-        <GridCard 
+        <ShopCard 
         id={shoe.id}
         img={shoe.img}
         brand={shoe.brand}

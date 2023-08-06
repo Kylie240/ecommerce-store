@@ -17,6 +17,7 @@ const Home = () => {
         info="We carry your favorite brands, and newest styles." 
         button="Shop"
         img={Banner2}
+        path="/shop/all"
       />
       <div id="nike"></div>
       <Carousel header="Nike Collection" category="nike"/>
@@ -25,6 +26,7 @@ const Home = () => {
         info="Now until the end of the month, save extra on shipping when you puchase $100 or more." 
         button="Start Saving"
         img={Banner1}
+        path="/shop/all"
       />
       
     </div>

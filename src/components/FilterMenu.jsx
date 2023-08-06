@@ -1,15 +1,7 @@
 import "./Shop.css"
-import { shoes } from "../ShoeData"
 import { Link } from 'react-router-dom';
 
 const FilterMenu = ({setNewArray}) => {
-
-    const changePrice = (e) => {
-        const lowPrice = parseInt(e.target.dataset.low)
-        const highPrice = parseInt(e.target.dataset.high)
-        const priceArray = shoes.filter(shoe => shoe.price >= lowPrice && shoe.price <= highPrice)
-        setNewArray(priceArray)
-    }    
 
   return (
     <div className='filter-menu'>
@@ -23,7 +15,7 @@ const FilterMenu = ({setNewArray}) => {
               <Link to={`/shop/brand/under armour`}>Under Armour</Link>
             </ul>
           </div>
-          <div className="filter-price">
+          <div className="filter-price headline">
             <h5>Price</h5>
             <ul>
               <Link to={`/shop/price/0/25`}>$0 - $25</Link>
@@ -34,7 +26,7 @@ const FilterMenu = ({setNewArray}) => {
               <Link to={`/shop/price/200/1000`}>$200+</Link>
               </ul>
           </div>
-          <div className="filter-color">
+          <div className="filter-color headline">
             <h5>Color</h5>
             <ul>
               <Link to={`/shop/color/red`} className="color-red">red</Link>
@@ -51,7 +43,7 @@ const FilterMenu = ({setNewArray}) => {
               <Link to={`/shop/color/black`} className="color-black">black</Link>
             </ul>
           </div>
-          <div className="filter-category">
+          <div className="filter-category headline">
             <h5>Type</h5>
             <ul>
             <Link to={`/shop/category/boating`}>Boating</Link>

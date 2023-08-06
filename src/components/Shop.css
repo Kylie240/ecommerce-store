@@ -9,6 +9,29 @@
     font-size: 24px;
     margin: 10px 0;
 }
+.results-header{
+    width: 100%;
+}
+.mobile-results{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.mobile-results div{
+    display: flex;
+}
+.mobile-results div:first-child{
+    color: rgba(0,0,0,0.6);
+}
+.mobile-results .left{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+}
 .results-container{
     display: flex;
     justify-content: space-between;
@@ -31,27 +54,48 @@
     flex-direction: column;
     margin-right: 20px;
 }
-.filter-menu ul{
+.mobile-filter-menu{
+    position: absolute;
+    top: 0;
+    z-index: 30;
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    padding: 40px 40px;
+    overflow-y: scroll;
+}
+.mobile-filter-menu span{
+    position: absolute;
+    right: 5%;
+}
+.filter-menu ul, .mobile-filter-menu ul{
     list-style: none;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
 }
-.filter-menu div{
+.headline{
     border-top: 1px solid lightgray;
 }
-.filter-menu h5{
+.filter-menu h5, .mobile-filter-menu h5{
     font-size: 24px;
     padding: 10px 0;
 }
-.filter-menu a, li{
+.mobile-filter-menu h5{
+    font-size: 24px;
+    padding-top: 30px;
+}
+.filter-menu a, .mobile-filter-menu a, li{
     font-size: 20px;
     cursor: pointer;
     margin: 6px 0;
     text-decoration: none;
     color: black;
 }
-.filter-menu a:hover {
+.filter-menu a:hover, .mobile-filter-menu a:hover {
     color: lightgray;
 }
 .filter-color ul{
@@ -189,15 +233,33 @@
     height: 30px;
     width: 30px;
 }
+.no-results{
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}
 
-
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .shop-grid{
         grid-template-columns: 1fr 1fr;
     }
 }
-@media (max-width: 515px) {
-    .shop-card img{
-        height: 70%;
+@media (max-width: 900px) {
+    .shop-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .shop-container{
+        padding: 0px;
+    }
+    .mobile-results{
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .results{
+        display: none;
+    }
+    .filter-menu{
+        display: none;
     }
 }

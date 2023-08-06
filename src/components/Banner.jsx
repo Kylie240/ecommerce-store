@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import "./Banner.css"
 
-const Banner = ({title, info, button, img}) => {
+const Banner = ({title, info, button, img, path}) => {
   return (
     <div className="banner container">
         <div className="banner-container">
@@ -11,7 +11,11 @@ const Banner = ({title, info, button, img}) => {
             <div className="banner-right">
                 <div className="banner-title">{title}</div>
                 <div className="banner-info">{info}</div>
-                <Link to={"/all"} className="banner-button">{button}</Link>
+                <Link 
+                  onClick={() => (window.scrollTo(0,0))}
+                  to={path} 
+                  className="banner-button"
+                >{button}</Link>
             </div>
         </div>
     </div>
