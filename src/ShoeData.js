@@ -4,33 +4,44 @@ import Img3 from "/src/images/products/3.webp"
 import Img4 from "/src/images/products/4.webp"
 import Img5 from "/src/images/products/5.webp"
 import Img6 from "/src/images/products/6.webp"
-import Img7 from "/src/images/products/7.avif"
-import Img8 from "/src/images/products/8.avif"
-import Img9 from "/src/images/products/9.avif"
-import Img10 from "/src/images/products/10.avif"
-import Img11 from "/src/images/products/11.avif"
-import Img12 from "/src/images/products/12.avif"
-import Img13 from "/src/images/products/13.avif"
-import Img14 from "/src/images/products/14.avif"
-import Img15 from "/src/images/products/15.avif"
-import Img16 from "/src/images/products/16.webp"
+import Img7 from "/src/images/products/7.jfif"
+import Img8 from "/src/images/products/8.jfif"
+import Img9 from "/src/images/products/9.jfif"
+import Img10 from "/src/images/products/10.jfif"
+import Img11 from "/src/images/products/11.jfif"
+import Img12 from "/src/images/products/12.jfif"
+import Img13 from "/src/images/products/13.jfif"
+import Img14 from "/src/images/products/14.jfif"
+import Img15 from "/src/images/products/15.jfif"
+import Img16 from "/src/images/products/16.jfif"
 import Img17 from "/src/images/products/17.webp"
 import Img18 from "/src/images/products/18.webp"
 import Img19 from "/src/images/products/19.webp"
+import Img20 from "/src/images/products/20.jfif"
+import Img21 from "/src/images/products/21.jfif"
+import Img22 from "/src/images/products/22.jfif"
+import Img23 from "/src/images/products/23.jfif"
+import Img24 from "/src/images/products/24.webp"
 
 import DunkHigh1 from "/src/images/products/otherImages/DunkHigh1.webp"
 import DunkHigh2 from "/src/images/products/otherImages/DunkHigh2.webp"
 import DunkHigh3 from "/src/images/products/otherImages/DunkHigh3.webp"
+import DunkHigh4 from "/src/images/products/otherImages/DunkHigh4.jfif"
 import DunkLow1 from "/src/images/products/otherImages/DunkLow1.webp"
 import DunkLow2 from "/src/images/products/otherImages/DunkLow2.webp"
 import DunkLow3 from "/src/images/products/otherImages/DunkLow3.webp"
 import DunkLow4 from "/src/images/products/otherImages/DunkLow4.webp"
 import FreeMetcon1 from "/src/images/products/otherImages/FreeMetcon1.webp"
+import FreeMetcon2 from "/src/images/products/otherImages/FreeMetcon2.jfif"
+import FreeMetcon3 from "/src/images/products/otherImages/FreeMetcon3.jfif"
 import FreeMetcon4 from "/src/images/products/otherImages/FreeMetcon4.webp"
 import Jordan1Mid1 from "/src/images/products/otherImages/Jordan1Mid1.webp"
 import Jordan1Mid2 from "/src/images/products/otherImages/Jordan1Mid2.webp"
 import Jordan1Mid3 from "/src/images/products/otherImages/Jordan1Mid3.webp"
 import Jordan1Mid4 from "/src/images/products/otherImages/Jordan1Mid4.webp"
+import Hovr1 from "/src/images/products/otherImages/Hovr1.webp"
+import Hovr2 from "/src/images/products/otherImages/Hovr2.webp"
+import Hovr3 from "/src/images/products/otherImages/Hovr3.webp"
 import Max1 from "/src/images/products/otherImages/Max1.webp"
 import Max2 from "/src/images/products/otherImages/Max2.webp"
 import Max3 from "/src/images/products/otherImages/Max3.webp"
@@ -41,43 +52,68 @@ import Jordan3Retro4 from "/src/images/products/otherImages/Jordan3Retro4.webp"
 import VaporMax2 from "/src/images/products/otherImages/VaporMax2.jfif"
 import VaporMax3 from "/src/images/products/otherImages/VaporMax3.jfif"
 import VaporMax4 from "/src/images/products/otherImages/VaporMax4.webp"
-import Future1 from "/src/images/products/otherImages/Future1.avif"
-import Future2 from "/src/images/products/otherImages/Future2.avif"
-import Future3 from "/src/images/products/otherImages/Future3.avif"
-import Walkman1 from "/src/images/products/otherImages/Walkman1.avif"
-import Walkman2 from "/src/images/products/otherImages/Walkman2.avif"
-import Walkman3 from "/src/images/products/otherImages/Walkman3.avif"
-import Playlist1 from "/src/images/products/otherImages/Playlist1.avif"
-import Playlist2 from "/src/images/products/otherImages/Playlist2.avif"
-import Playlist3 from "/src/images/products/otherImages/Playlist3.avif"
-import Casette1 from "/src/images/products/otherImages/Casette1.avif"
-import Casette2 from "/src/images/products/otherImages/Casette2.avif"
-import Casette3 from "/src/images/products/otherImages/Casette3.avif"
-import Ultraboost1 from "/src/images/products/otherImages/Ultraboost1.avif"
-import Ultraboost2 from "/src/images/products/otherImages/Ultraboost2.avif"
-import Adizero1 from "/src/images/products/otherImages/Adizero1.avif"
-import Adizero2 from "/src/images/products/otherImages/Adizero2.avif"
-import Adizero3 from "/src/images/products/otherImages/Adizero3.avif"
-import Adizero4 from "/src/images/products/otherImages/Adizero4.avif"
-import Lite1 from "/src/images/products/otherImages/Lite1.avif"
-import Lite2 from "/src/images/products/otherImages/Lite2.avif"
-import Lite3 from "/src/images/products/otherImages/Lite3.avif"
-import Kaptir1 from "/src/images/products/otherImages/Kaptir1.avif"
-import Kaptir2 from "/src/images/products/otherImages/Kaptir2.avif"
-import Kaptir3 from "/src/images/products/otherImages/Kaptir3.avif"
+import Softride1 from "/src/images/products/otherImages/Softride1.jfif"
+import Softride2 from "/src/images/products/otherImages/Softride2.jfif"
+import Softride3 from "/src/images/products/otherImages/Softride3.jfif"
+import Softride4 from "/src/images/products/otherImages/Softride4.jfif"
+import Axelion1 from "/src/images/products/otherImages/Axelion1.jfif"
+import Axelion2 from "/src/images/products/otherImages/Axelion2.jfif"
+import Axelion3 from "/src/images/products/otherImages/Axelion3.jfif"
+import Axelion4 from "/src/images/products/otherImages/Axelion4.jfif"
+import Suede1 from "/src/images/products/otherImages/Suede1.jfif"
+import Suede2 from "/src/images/products/otherImages/Suede2.jfif"
+import Suede3 from "/src/images/products/otherImages/Suede3.jfif"
+import Suede4 from "/src/images/products/otherImages/Suede4.jfif"
+import Speckle1 from "/src/images/products/otherImages/Speckle1.jfif"
+import Speckle2 from "/src/images/products/otherImages/Speckle2.jfif"
+import Speckle3 from "/src/images/products/otherImages/Speckle3.jfif"
+import Speckle4 from "/src/images/products/otherImages/Speckle4.jfif"
+import RStrackB1 from "/src/images/products/otherImages/RS-trackB1.jfif"
+import RStrackB2 from "/src/images/products/otherImages/RS-trackB2.jfif"
+import RStrackB3 from "/src/images/products/otherImages/RS-trackB3.jfif"
+import RStrackB4 from "/src/images/products/otherImages/RS-trackB4.jfif"
+import RStrack1 from "/src/images/products/otherImages/RS-track1.jfif"
+import RStrack2 from "/src/images/products/otherImages/RS-track2.jfif"
+import RStrack3 from "/src/images/products/otherImages/RS-track3.jfif"
+import RStrack4 from "/src/images/products/otherImages/RS-track4.jfif"
+import Yeezy1 from "/src/images/products/otherImages/Yeezy1.jfif"
+import Yeezy2 from "/src/images/products/otherImages/Yeezy2.jfif"
+import Yeezy3 from "/src/images/products/otherImages/Yeezy3.jfif"
+import Yeezy4 from "/src/images/products/otherImages/Yeezy4.jfif"
+import Nmd1 from "/src/images/products/otherImages/Nmd1.jfif"
+import Nmd2 from "/src/images/products/otherImages/Nmd2.jfif"
+import Nmd3 from "/src/images/products/otherImages/Nmd3.jfif"
+import Nmd4 from "/src/images/products/otherImages/Nmd4.jfif"
+import S11 from "/src/images/products/otherImages/S11.jfif"
+import S12 from "/src/images/products/otherImages/S12.jfif"
+import S13 from "/src/images/products/otherImages/S13.jfif"
+import S14 from "/src/images/products/otherImages/S14.jfif"
+import ZX1 from "/src/images/products/otherImages/ZX1.jfif"
+import ZX2 from "/src/images/products/otherImages/ZX2.jfif"
+import ZX3 from "/src/images/products/otherImages/ZX3.jfif"
+import ZX4 from "/src/images/products/otherImages/ZX4.jfif"
+import Ralph1 from "/src/images/products/otherImages/Ralph1.jfif"
+import Ralph2 from "/src/images/products/otherImages/Ralph2.jfif"
+import Ralph3 from "/src/images/products/otherImages/Ralph3.jfif"
+import Ralph4 from "/src/images/products/otherImages/Ralph4.jfif"
+import Greenstride1 from "/src/images/products/otherImages/Greenstride1.jfif"
+import Greenstride2 from "/src/images/products/otherImages/Greenstride2.jfif"
+import Greenstride3 from "/src/images/products/otherImages/Greenstride3.jfif"
+import Greenstride4 from "/src/images/products/otherImages/Greenstride4.jfif"
+import Timbs1 from "/src/images/products/otherImages/Timbs1.jfif"
+import Timbs2 from "/src/images/products/otherImages/Timbs2.jfif"
+import Timbs3 from "/src/images/products/otherImages/Timbs3.jfif"
+import Timbs4 from "/src/images/products/otherImages/Timbs4.jfif"
+import Kaptir1 from "/src/images/products/otherImages/Kaptir1.jfif"
+import Kaptir2 from "/src/images/products/otherImages/Kaptir2.jfif"
+import Kaptir3 from "/src/images/products/otherImages/Kaptir3.jfif"
+import Kaptir4 from "/src/images/products/otherImages/Kaptir4.jfif"
 import MicroG1 from "/src/images/products/otherImages/MicroG1.webp"
 import MicroG2 from "/src/images/products/otherImages/MicroG2.webp"
 import MicroG3 from "/src/images/products/otherImages/MicroG3.webp"
-import Hovr1 from "/src/images/products/otherImages/Hovr1.webp"
-import Hovr2 from "/src/images/products/otherImages/Hovr2.webp"
-import Hovr3 from "/src/images/products/otherImages/Hovr3.webp"
 import Project1 from "/src/images/products/otherImages/Project1.webp"
 import Project2 from "/src/images/products/otherImages/Project2.webp"
 import Project3 from "/src/images/products/otherImages/Project3.webp"
-import Plr1 from "/src/images/products/otherImages/Plr1.avif"
-import Plr2 from "/src/images/products/otherImages/Plr2.avif"
-import Plr3 from "/src/images/products/otherImages/Plr3.avif"
-import Plr4 from "/src/images/products/otherImages/Plr4.avif"
 
 export const shoes = [
     {
@@ -101,7 +137,7 @@ export const shoes = [
         name: "dunk high retro",
         brand: "nike",
         price: 125,
-        otherImgs: [DunkHigh1, DunkHigh2, DunkHigh3],
+        otherImgs: [DunkHigh1, DunkHigh2, DunkHigh3, DunkHigh4],
         colors: ["white", "black"],
         sizes: [],
         description: `Created for the hardwood but taken to the streets, the '80s b-ball icon returns with perfectly sheened overlays and original university colors. With its classic hoops design, the Nike Dunk High Retro channels '80s vintage back onto the streets while its padded, high-top collar adds an old-school look rooted in comfort.`,
@@ -141,7 +177,7 @@ export const shoes = [
         name: "free metcon 5",
         brand: "nike",
         price: 120,
-        otherImgs: [FreeMetcon1, FreeMetcon4],
+        otherImgs: [FreeMetcon1, FreeMetcon2, FreeMetcon3, FreeMetcon4],
         colors: ["green", "orange"],
         sizes: [],
         description: `When your workouts wade into the nitty gritty, the Nike Free Metcon 5 can meet you in the depths, help you dig deep to find that final ounce of force and come out of the other side on a high. It matches style with substance, forefoot flexibility with backend stability, perfect for flying through a cardio day or enhancing your agility. A revamped upper offers easier entry with a collar made just for your ankle.`,
@@ -165,132 +201,130 @@ export const shoes = [
         category: ["fashion"],
         featured: false,
         img: Img7,
-        name: "RS-XL Cassette Tape",
+        name: "RS-TRCK Speckle",
         brand: "puma",
-        price: 130,
-        otherImgs: [Casette1, Casette2, Casette3],
-        colors: ["grey", "red"],
+        price: 120,
+        otherImgs: [Speckle1, Speckle2, Speckle3, Speckle4],
+        colors: ["grey", "black", "green"],
         sizes: [],
-        description: `Break out the stereos and dust off the tape decks because it’s time for a throwback. The RS-XL Cassette Tape is inspired by one of hip hop’s earliest DIY mediums. These shoes have everything you’d find on a classic tape, even the music. Tap your phone to the tongue of the shoe for a playlist made by Roc Nation, plus exclusive video content.`,
+        description: `Anchor your freshest ‘fits with the Men's Puma RS-TRCK Speckle Casual Shoes. These streetwear sneakers bring the heat to your look and relay your tastemaking fashion skills to turn everywhere you go into an event.`,
     },
     {
         id: 8,
-        category: ["fashion"],
+        category: ["casual"],
         featured: false,
         img: Img8,
-        name: "RS-XL Playlist",
+        name: "Softride Rift",
         brand: "puma",
-        price: 130,
-        otherImgs: [Playlist1, Playlist2, Playlist3],
-        colors: ["blue", "white"],
+        price: 65,
+        otherImgs: [Softride1, Softride2, Softride3, Softride4],
+        colors: ["black"],
         sizes: [],
-        description: `For those out to make the perfect playlist, the RS-XL Playlist is inspired by the endless pursuit curating vibes through music. They’re loaded with graphics from music in the digital era like scroll wheels and download buttons. These digital age kicks also come with a piece of high tech. Tap your phone to the tongue of the shoe for a playlist made by Roc Nation, plus exclusive video content.`,
+        description: `The Men's Puma Softride Rift Training Shoes is a versatile sneaker. Pair it up with everyday casual wear for a sleek yet athletic look, or rock it for performance needs when cushioned comfort is key.`,
     },
     {
         id: 9,
-        category: ["sports"],
+        category: ["fashion"],
         featured: false,
         img: Img9,
-        name: "FUTURE PRO FG/AG",
+        name: "Suede Classic 21",
         brand: "puma",
-        price: 140,
-        salePrice: 100,
-        otherImgs: [Future1, Future2, Future3],
-        colors: ["white", "red"],
+        price: 70,
+        otherImgs: [Suede1, Suede2, Suede3, Suede4],
+        colors: ["black", "white"],
         sizes: [],
-        description: `Calling all playmakers. Inspired by Neymar Jr’s style of play, meet the new FUTURE PRO. With its FUZIONFIT360 upper a PWRTAPE support, you'll be locked in for quick cuts and changes of pace. The upper is textured with different levels of grip for dribbling, passing, and finishing.`,
+        description: `The first trainer from Puma hit the ground in 1968 and the powerhouse brand hasn’t looked back since. The newest iteration, the Puma Suede Classic 21 Casual Shoes, boasts a full suede upper and modern touches that bring it into this century.`,
     },
     {
         id: 10,
-        category: ["fashion"],
+        category: ["casual"],
         featured: true,
         img: Img10,
-        name: "RS-XL Disc Walkman",
+        name: "Axelion Perf Trainers",
         brand: "puma",
-        price: 130,
-        otherImgs: [Walkman1, Walkman2, Walkman3],
-        colors: ["yellow", "tan"],
+        price: 75,
+        otherImgs: [Axelion1, Axelion2, Axelion3, Axelion4],
+        colors: ["white"],
         sizes: [],
-        description: `Still burning CDs for your friends? We’ve got the perfect shoes for you. The RS-XL Disc is inspired by DIY CDs that dominated the underground hip hop scene. Full of CD player decals, these shoes are perfect for long time collectors and Y2K revivalists alike. Tap your phone to the tongue of the shoe for a playlist made by Roc Nation, plus exclusive video content.`,
+        description: `It doesn't get much better the premium stylings of the Men's Puma Axelion Perf Training Shoes. These beauties provide a modern look and all-day comfort, both of which you'll love.`,
     },
     {
         id: 11,
-        category: ["running"],
+        category: ["casual"],
         featured: false,
         img: Img11,
-        name: "Ultraboost Light",
-        brand: "adidas",
-        price: 190,
-        otherImgs: [Ultraboost1, Ultraboost2],
-        colors: ["red"],
+        name: "RS-TRCK Casual",
+        brand: "puma",
+        price: 120,
+        otherImgs: [RStrackB1, RStrackB2, RStrackB3, RStrackB4],
+        colors: ["black", "grey"],
         sizes: [],
-        description: `Experience epic energy with the new Ultraboost Light, our lightest Ultraboost ever. The magic lies in the Light BOOST midsole, a new generation of adidas BOOST. Its unique molecule design achieves the lightest BOOST foam to date. With hundreds of BOOST capsules bursting with energy and ultimate cushioning and comfort, some feet really can have it all.`,
+        description: `Anchor your freshest ‘fits with the Men's Puma RS-TRCK Casual Shoes. These streetwear sneakers bring the heat to your look and relay your tastemaking fashion skills to turn everywhere you go into an event.`,
     },
     {
         id: 12,
-        category: ["running"],
+        category: ["casual"],
         featured: true,
         img: Img12,
-        name: "Adizero Boston 12",
+        name: "RS-TRCK Casual",
         brand: "adidas",
-        price: 160,
-        salePrice: 140,
-        otherImgs: [Adizero1, Adizero2, Adizero3, Adizero4],
-        colors: ["green", "black"],
+        price: 120,
+        otherImgs: [RStrack1, RStrack2, RStrack3, RStrack4],
+        colors: ["tan"],
         sizes: [],
-        description: `The Boston Marathon is a race. But it's also a goal, and a training plan and all the days it stays on your mind before the big one. The Adizero Boston 12 Shoes are built for mid- to long-distance running`,
+        description: `Anchor your freshest ‘fits with the Men's Puma RS-TRCK Casual Shoes. These streetwear sneakers bring the heat to your look and relay your tastemaking fashion skills to turn everywhere you go into an event.`,
     },
     {
         id: 13,
-        category: ["running"],
+        category: ["casual"],
         featured: false,
         img: Img13,
-        name: "Lite Racer Adapt 6.0",
+        name: "Yeezy 350 V2 CMPCT",
         brand: "adidas",
-        price: 70,
-        otherImgs: [Lite1, Lite2, Lite3],
-        colors: ["grey", "blue", "red"],
+        price: 230,
+        otherImgs: [Yeezy1, Yeezy2, Yeezy3, Yeezy4],
+        colors: ["grey", "black"],
         sizes: [],
-        description: `When it comes to your sneaker game, you don't need any pointers. These adidas sneakers confirm it. From the effortless, slip-on design to the eye-catching two-tone knit upper, they're comfy yet sophisticated. Cloudfoam cushioning puts energy into your stride. The bold lettering across the strap and woven label at the collar point to the adidas heritage.`,
+        description: `The adidas Yeezy 350 V2 CMPCT offers a reworked iteration of the sneaker that changed the sneaker game upon its 2015 release. The era-defining silhouette that influenced fashion from the streets to the runways gets a slight tweak to support a sock-like fit with an adjustable no-tie lacing system and postmodern aesthetic to change the sneaker game once again.`,
     },
     {
         id: 14,
-        category: ["running"],
+        category: ["fashion"],
         featured: false,
         img: Img14,
-        name: "Kaptir 3.0",
+        name: "Original NMD R1",
         brand: "adidas",
-        price: 90,
-        otherImgs: [Kaptir1, Kaptir2, Kaptir3],
-        colors: ["green"],
+        price: 160,
+        otherImgs: [Nmd1, Nmd2, Nmd3, Nmd4],
+        colors: ["tan"],
         sizes: [],
-        description: `You don't do anything ordinary. Define your style with bold originality in these adidas shoes. The sleek silhouette brings a futuristic look, and they're built with the comfort to match your daily moves. The Cloudfoam midsole gives ultra-soft cushioning so you feel light while looking fresh. Large graphic text makes them undeniably adidas.`,
+        description: `A fusion of the best adidas Originals technologies and progressive street style collide on the Men's adidas Originals NMD Runner R1 Casual Shoes. If you are looking for the perfect kicks to stand up to your wardrobe look no further than the adidas Originals NMD R1 Casual Shoes.`,
     },
     {
         id: 15,
-        category: ["running"],
+        category: ["casual"],
         featured: true,
         img: Img15,
-        name: "X_PLRBoost",
+        name: "Originals ZX 750",
         brand: "adidas",
-        price: 160,
-        otherImgs: [Plr1, Plr2, Plr3, Plr4],
-        colors: ["grey"],
+        price: 100,
+        otherImgs: [ZX1, ZX2, ZX3, ZX4],
+        colors: ["green", "white"],
         sizes: [],
-        description: `A fresh take on an iconic look. These adidas shoes bring the style and comfort for whatever mode you're in. The BOOST midsole makes every step feel effortless — so whether you're exploring the city or getting through the weekly grind, your feet have to support to keep going.`,
+        description: `The newest iteration from the adidas ZX family has arrived. The Men's adidas Originals ZX 750 Casual Shoes features iconic street styling along with retro runner appeal.`,
     },
     {
         id: 16,
-        category: ["hunting"],
+        category: ["casual"],
         featured: true,
         img: Img16,
-        name: "HOVR™ Dawn",
-        brand: "under armour",
-        price: 190,
-        otherImgs: [Hovr1, Hovr2, Hovr3],
-        colors: ["black"],
+        name: "Kaptir 3.0",
+        brand: "adidas",
+        price: 90,
+        otherImgs: [Kaptir1, Kaptir2, Kaptir3, Kaptir4],
+        colors: ["tan"],
         sizes: [],
-        description: `In order to make the perfect backcountry hunting boots, we took our lightest, most durable materials and added in the energy-returning UA HOVR™ cushioning from our best running shoes. It's comfort you can take off trail.`,
+        description: `Whether hitting the gym or hitting the streets, the Men's adidas Kaptir 3.0 Casual Shoes strike the perfect balance of casual and sporty for a pair of sneakers ready for whatever. These sleek and sporty sneakers are capped off with an athletic appearance with supportive comfort through sustainable materials for a pair primed to be your new go-to everyday kicks.`,
     },
     {
         id: 17,
@@ -331,5 +365,70 @@ export const shoes = [
         colors: ["white", "blue", "yellow"],
         sizes: [],
         description: `Legendary Air gets lifted. Nike's first lifestyle Air Max brings you style, comfort and a big Air bubble. With its large window and fresh array of colors, it lets you showcase one of Nike's greatest innovations. The lightweight and airy upper and super low-cut collar make it the perfect go-to for warm-weather fun.`,
+    },
+    {
+        id: 20,
+        category: ["casual"],
+        featured: false,
+        img: Img20,
+        name: "Originals NMD_S1",
+        brand: "adidas",
+        price: 60,
+        otherImgs: [S11, S12, S13, S14],
+        colors: ["white", "orange", "blue"],
+        sizes: [],
+        description: `The Men's adidas Originals NMD_S1 Casual Shoes update an instant classic with sleek details to keep you grounded while supplying that extraordinary walking-on-air sensation with every step. Slip into these next-generation lifestyle kicks and pair them with jeans, shorts, sweats or virtually anything to refresh your look through all seasons.`,
+    },
+    {
+        id: 21,
+        category: ["boots"],
+        featured: false,
+        img: Img21,
+        name: "6 Inch Premium Waterproof Boots",
+        brand: "timberland",
+        price: 210,
+        otherImgs: [Timbs1, Timbs2, Timbs3, Timbs4],
+        colors: ["brown", "black"],
+        sizes: [],
+        description: `Sealed to keep water out and comfort in, the Men's Timberland 6 Inch Waterproof Boots are the perfect dependable boot. Not all about function, these boots also have a classic signature style that you'll reach for again and again.`,
+    },
+    {
+        id: 22,
+        category: ["boots", "hiking"],
+        featured: false,
+        img: Img22,
+        name: "Greenstride Motion 6 Leather Super Ox",
+        brand: "timberland",
+        price: 140,
+        otherImgs: [Greenstride1, Greenstride2, Greenstride3, Greenstride4],
+        colors: ["brown", "black", "yellow"],
+        sizes: [],
+        description: `Make your treks through nature and city streets alike with the Men's Timberland GreenStride Motion 6 Leather Super Ox Hiking Boots for a pair of kicks you can feel good in and feel good about. Made using sustainable materials, these premium hiking boots preserve the nature we love to traverse while delivering rugged comfort for enjoyable exploration.`,
+    },
+    {
+        id: 23,
+        category: ["fashion", "casual"],
+        featured: false,
+        img: Img23,
+        name: "Modern Trainer",
+        brand: "ralph lauren",
+        price: 228,
+        otherImgs: [Ralph1, Ralph2, Ralph3, Ralph4],
+        colors: ["grey", "white", "black"],
+        sizes: [],
+        description: `Lace up for your day in the unforgettable and unmistakable Y2K-inspired style of the Men's Polo Ralph Lauren Modern Trainer Casual Shoes. A guaranteed head-turner, these sneakers go all-in on 2000s vibes, with a mixed material upper delivering layers of texture and captivating accents that make any outfit in your closet pop.`,
+    },
+    {
+        id: 24,
+        category: ["fashion", "boots"],
+        featured: false,
+        img: Img24,
+        name: "UA HOVR Dawn",
+        brand: "under armour",
+        price: 190,
+        otherImgs: [Hovr1, Hovr2, Hovr3],
+        colors: ["black"],
+        sizes: [],
+        description: `Lace up for your day in the unforgettable and unmistakable Y2K-inspired style of the Men's Polo Ralph Lauren Modern Trainer Casual Shoes. A guaranteed head-turner, these sneakers go all-in on 2000s vibes, with a mixed material upper delivering layers of texture and captivating accents that make any outfit in your closet pop.`,
     },
 ]

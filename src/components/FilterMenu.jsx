@@ -13,6 +13,8 @@ const FilterMenu = ({setNewArray}) => {
             <Link to={`/shop/brand/adidas`}>Adidas</Link>
             <Link to={`/shop/brand/nike`}>Nike</Link>
             <Link to={`/shop/brand/puma`}>Puma</Link>
+            <Link to={`/shop/brand/ralph lauren`}>Ralph Lauren</Link>
+            <Link to={`/shop/brand/timberland`}>Timberland</Link>
             <Link to={`/shop/brand/under armour`}>Under Armour</Link>
           </ul>
         </div>
@@ -49,6 +51,8 @@ const FilterMenu = ({setNewArray}) => {
           <ul>
           <Link to={`/shop/category/sports`}>Athletic</Link>
           <Link to={`/shop/category/boating`}>Boating</Link>
+          <Link to={`/shop/category/boots`}>Boots</Link>
+          <Link to={`/shop/category/casual`}>Casual</Link>
           <Link to={`/shop/category/fashion`}>Fashion</Link>
           <Link to={`/shop/category/fishing`}>Fishing</Link>
           <Link to={`/shop/category/hunting`}>Hunting</Link>
