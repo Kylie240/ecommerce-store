@@ -12,6 +12,7 @@ const All = () => {
     {newArray.length === 0 && <NoResults />}
         {newArray.map((shoe) => (
         <ShopCard 
+        key={shoe.id}
         id={shoe.id}
         img={shoe.img}
         brand={shoe.brand}
