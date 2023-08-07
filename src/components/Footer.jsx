@@ -24,7 +24,7 @@ const Footer = () => {
                     <li>contact us</li>
                 </ul>
                 <ul>
-                    <h6>about sneak geek</h6>
+                    <h6>about starting line</h6>
                     <li>news</li>
                     <li>careers</li>
                     <li>investors</li>
@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
         <div className="footer-bottom">
             <div className="bottom-left">
-                <strong>United States</strong> © 2023 Sneak Geek, Inc. All Rights Reserved
+                <strong>United States</strong> © 2023 Starting Line, Inc. All Rights Reserved
             </div>
             <div className="bottom-right">
                 <p>Guides</p>
