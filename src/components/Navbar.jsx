@@ -3,21 +3,23 @@ import "./Navbar.css"
 import { Link } from 'react-router-dom';
 import { CartContext } from "../pages/ProductPage";
 import Cart from "./Cart";
+import MobileMenu from "./MobileMenu";
 
 
 const Navbar = () => {
   const [openCart, setOpenCart] = useState(false)
+  const [openMenu, setOpenMenu] = useState(false)
   const [sticky, setSticky] = useState(false)
 
   const {cartItems} = useContext(CartContext)
 
-  const handleCart = () => {
-    if (openCart) {
+  const handleMenu = () => {
+    if (openMenu) {
       document.body.style.overflow = ""
-      setOpenCart(false)
+      setOpenMenu(false)
     } else {
-      document.body.style.overflow = ""
-      setOpenCart(true)
+      document.body.style.overflow = "hidden"
+      setOpenMenu(true)
     }
   }
 
@@ -52,15 +54,16 @@ const Navbar = () => {
               <Link>Brands</Link>
               <Link>Sale</Link>
               <div className="right-icons">
-                <div className="cart-icon" onClick={() => handleCart()}>
+                <div className="cart-icon" onClick={() => setOpenCart(!openCart)}>
                   <i class="fa-solid fa-cart-shopping fa-lg"></i>
                   {cartItems.length > 0 ? <span className="cart-num">{cartItems.length}</span> : ""}
                 </div>
-                <i class="fa-solid fa-bars fa-lg"></i>
+                <i class="fa-solid fa-bars fa-lg" onClick={handleMenu}></i>
+                {openMenu && <MobileMenu handleMenu={handleMenu} />}
               </div>
           </div>
         </div>
-      {openCart && <Cart handleCart={handleCart} />}
+      {openCart && <Cart setOpenCart={setOpenCart}/>}
       </div>
     </div>
   )

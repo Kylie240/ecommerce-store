@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
 import "./Hero.css"
-import hero1 from "../images/hero/hero1.webp"
+import hero1 from "../images/hero/hero1.jpg"
 import hero2 from "../images/hero/hero2.webp"
 import hero3 from "../images/hero/hero3.webp"
-import hero4 from "../images/hero/hero4.avif"
-import hero5 from "../images/hero/hero5.jpg"
+import hero4 from "../images/hero/hero4.webp"
+import hero5 from "../images/hero/hero5.webp"
 
 const Hero = () => {
   return (

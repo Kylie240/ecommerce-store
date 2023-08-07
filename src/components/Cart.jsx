@@ -4,7 +4,7 @@ import { CartContext } from "../pages/ProductPage"
 import CartItem from "./CartItem"
 import { Link } from "react-router-dom"
 
-const Cart = ({handleCart}) => {
+const Cart = ({setOpenCart}) => {
     const {cartItems} = useContext(CartContext)
     const [sticky, setSticky] = useState(false)
     const [total, setTotal] = useState(0)
@@ -29,7 +29,7 @@ const Cart = ({handleCart}) => {
         <div className={`cart-container ${sticky ? "sticky" : ""}`}>
             <div className="cart-top">
                 <h3>Your Shopping Cart ({cartItems.length})</h3>
-                <i class="fa-solid fa-xmark" onClick={() => handleCart()}></i>
+                <i class="fa-solid fa-xmark" onClick={() => setOpenCart(false)}></i>
             </div>
             {cartItems.length > 0 ? 
                 <div className="cart-main">

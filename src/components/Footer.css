@@ -17,6 +17,7 @@ footer li{
     padding: 4px;
     color: lightgray;
     font-weight: lighter;
+    font-size: 14px;
 }
 .footer-container{
     max-width: 1200px;
@@ -33,7 +34,7 @@ footer li{
 }
 .gift-list li, h6{
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 14px;
     text-transform: uppercase;
     color: white;
 }
@@ -88,5 +89,10 @@ footer li{
     .bottom-right{
         padding: 20px 0;
         flex-direction: column;
+    }
+}
+@media (max-width:1200px) {
+    footer{
+        margin-top: 0px;
     }
 }

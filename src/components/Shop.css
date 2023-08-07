@@ -81,7 +81,7 @@
     display: none;
     flex-direction: column;
     margin-right: 20px;
-    padding: 40px 40px;
+    padding: 40px 40px 80px 40px;
     overflow-y: scroll;
 }
 .mobile-filter-menu span{
@@ -273,7 +273,7 @@
 }
 @media (max-width: 900px) {
     .mobile-filter-menu{
-        display: flex;
+        display: flex;;
     }
     .shop-grid{
         grid-template-columns: 1fr 1fr;

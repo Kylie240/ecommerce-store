@@ -38,6 +38,8 @@ import Max4 from "/src/images/products/otherImages/Max4.webp"
 import Jordan3Retro1 from "/src/images/products/otherImages/Jordan3Retro1.webp"
 import Jordan3Retro2 from "/src/images/products/otherImages/Jordan3Retro2.webp"
 import Jordan3Retro4 from "/src/images/products/otherImages/Jordan3Retro4.webp"
+import VaporMax2 from "/src/images/products/otherImages/VaporMax2.jfif"
+import VaporMax3 from "/src/images/products/otherImages/VaporMax3.jfif"
 import VaporMax4 from "/src/images/products/otherImages/VaporMax4.webp"
 import Future1 from "/src/images/products/otherImages/Future1.avif"
 import Future2 from "/src/images/products/otherImages/Future2.avif"
@@ -126,7 +128,7 @@ export const shoes = [
         name: "air vapormax plus",
         brand: "nike",
         price: 210,
-        otherImgs: [VaporMax4],
+        otherImgs: [VaporMax2, VaporMax3, VaporMax4],
         colors: ["black"],
         sizes: [],
         description: `The Nike Air VaporMax Plus looks to the past and propels you into the future. Nodding to the 1998 Air Max Plus with its floating cage, padded upper and heel logo, it adds revolutionary VaporMax Air technology to ramp up the comfort and create a modern look.`,
