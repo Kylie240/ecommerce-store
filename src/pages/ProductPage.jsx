@@ -90,7 +90,7 @@ const ProductPage = () => {
           <ProductModals />
         </form>
       </div>
-      <Carousel header="you might also like" category="running"/>
+      <Carousel header="you might also like" category={featuredShoe.category[0]}/>
     </div>
   )
 }

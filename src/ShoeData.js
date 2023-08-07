@@ -276,7 +276,7 @@ export const shoes = [
     },
     {
         id: 13,
-        category: ["casual"],
+        category: ["high-end"],
         featured: false,
         img: Img13,
         name: "Yeezy 350 V2 CMPCT",
@@ -407,7 +407,7 @@ export const shoes = [
     },
     {
         id: 23,
-        category: ["fashion", "casual"],
+        category: ["high-end", "fashion"],
         featured: false,
         img: Img23,
         name: "Modern Trainer",
@@ -420,7 +420,7 @@ export const shoes = [
     },
     {
         id: 24,
-        category: ["fashion", "boots"],
+        category: ["boots", "fashion"],
         featured: false,
         img: Img24,
         name: "UA HOVR Dawn",
