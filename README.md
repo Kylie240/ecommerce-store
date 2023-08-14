@@ -19,6 +19,6 @@ React,
 
 <h4>Project preview</h4>
 <p>Home page:</p>
-<img width="500" src="https://kylieoliver.com/localhost_5173_product_2.png"/>
+<img width="500" src="https://kylieoliver.com/starting-line.png"/>
   
 </div>
